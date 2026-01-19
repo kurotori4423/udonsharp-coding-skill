@@ -1,0 +1,19 @@
+{
+    "name" : "UdonSharp Coding",
+    "owner" : {
+        "name" : "kurotori"
+        },
+        "metadata" : {
+            "description" : "UdonSharp coding utilities and scripts for VRChat.",
+            "version" : "1.0.0"
+        },
+        "plugins":{
+            "name" : "udonsharp-coding",
+            "description" : "UdonSharp coding utilities and scripts for VRChat.",
+            "source" : "./",
+            "strict" : false,
+            "skills" : [
+                "./skills/udonsharp-coding"
+            ]
+        }
+}
