@@ -60,3 +60,7 @@ public class UdonSharpScript : UdonSharpBehaviour
 # Networking
 
 If the problem you are addressing involves network synchronization, read the document `references/en/udon_network/README.md`. These documents describe the concepts and methods required to implement network logic in Udon.
+
+# Class Design
+
+If you need shared logic, encapsulation, or inheritance, be aware that UdonSharp has important limitations. See `references/en/udon_class.md`.
