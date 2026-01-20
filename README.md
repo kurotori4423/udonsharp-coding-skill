@@ -1,23 +1,39 @@
 # udonsharp-coding-skill
-Agent Skills for UdonSharp
 
-## Installation
+UdonSharpのコーディングを行う際に、AIエージェントがUdonSharpの知識と設計ノウハウを教えるためのAgent Skills
 
-This repository is distributed as a Claude Code plugin.
+- UdonSharpでの制限
+- ネットワーク同期に関するノウハウ 
 
-### Install from Claude Code
+が含まれており、何度もAIエージェントに対してUdonSharp特有の問題を教えなくても、これを考慮したコードが書かれるハズ。
 
-1. Open Claude Code
-2. Open the command palette
-3. Run:
+## インストール方法
+
+### Claude Code
+
+Pluginとして導入できます。
+
+1. Claude Codeを起動
+2. コマンドパレットで以下を入力して、リポジトリを追加
 ```
 /plugin marketplace add kurotori4423/udonsharp-coding-skill
 ```
-4. Select this plugin from the list and install it
-
+3. 以下のコマンドでスキルをインストール
 ```
 /plugin install udonsharp-coding
 ```
 
-Once installed, all skills in this repository will be available
-to Claude Code across your projects.
+### Claude Code 以外 (GitHub Copilot や CODEXなど)
+
+[OpenSkills](https://github.com/numman-ali/openskills) でのインストールがオススメ。
+
+`Node.js`と`npm`が必要です。
+
+導入したいプロジェクトのルートフォルダで以下のコマンドを実行
+```
+npx openskills install kurotori4423/udonsharp-coding-skill
+```
+
+## 使い方
+
+導入した状態でUdonSharpを書かせたりすれば、エージェントはこのスキルを見てUdonSharpのベストプラクティスに従って実装します。
