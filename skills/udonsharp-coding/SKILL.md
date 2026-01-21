@@ -64,3 +64,7 @@ If the problem you are addressing involves network synchronization, read the doc
 # Class Design
 
 If you need shared logic, encapsulation, or inheritance, be aware that UdonSharp has important limitations. See `references/en/udon_class.md`.
+
+# Player Tracking
+
+If you are implementing things like gaze-following objects or objects that follow avatar bones, see `references/en/udon_playerTracking.md`. It includes important notes and pitfalls for implementation.
