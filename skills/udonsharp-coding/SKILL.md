@@ -68,3 +68,7 @@ If you need shared logic, encapsulation, or inheritance, be aware that UdonSharp
 # Player Tracking
 
 If you are implementing things like gaze-following objects or objects that follow avatar bones, see `references/en/udon_playerTracking.md`. It includes important notes and pitfalls for implementation.
+
+# uGUI
+
+If you expect to implement uGUI-related features, see `references/en/udon_uGUI.md` because UdonSharp has some uGUI-specific limitations.
