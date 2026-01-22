@@ -69,6 +69,6 @@ If you need shared logic, encapsulation, or inheritance, be aware that UdonSharp
 
 If you are implementing things like gaze-following objects or objects that follow avatar bones, see `references/en/udon_playerTracking.md`. It includes important notes and pitfalls for implementation.
 
-# uGUI
+# Persistence
 
-If you expect to implement uGUI-related features, see `references/en/udon_uGUI.md` because UdonSharp has some uGUI-specific limitations.
+If you need to save player-specific data (like high scores, inventory, or settings) across sessions or instances, refer to `references/en/udon_persistence.md`. This document explains how to use PlayerData and PlayerObjects for persistent storage.
