@@ -72,3 +72,7 @@ If you are implementing things like gaze-following objects or objects that follo
 # Persistence
 
 If you need to save player-specific data (like high scores, inventory, or settings) across sessions or instances, refer to `references/en/udon_persistence.md`. This document explains how to use PlayerData and PlayerObjects for persistent storage.
+
+# Loading (External Resources)
+
+If you need to retrieve text/JSON data or images from external servers at runtime, see `references/en/udon_stringLoading.md` and `references/en/udon_imageLoading.md`. These documents explain how to use `VRCStringDownloader` and `VRCImageDownloader` with their respective callbacks and limitations.
