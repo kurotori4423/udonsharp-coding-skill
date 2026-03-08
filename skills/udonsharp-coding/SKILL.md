@@ -76,3 +76,7 @@ If you need to save player-specific data (like high scores, inventory, or settin
 # Loading (External Resources)
 
 If you need to retrieve text/JSON data or images from external servers at runtime, see `references/en/udon_stringLoading.md` and `references/en/udon_imageLoading.md`. These documents explain how to use `VRCStringDownloader` and `VRCImageDownloader` with their respective callbacks and limitations.
+
+# Creator Economy
+
+If you need to handle in-game purchases, check product ownership, or utilize the VRChat Creator Economy SDK, refer to `references/en/udon_creatorEconomy.md`. This document explains how to use `UdonProduct`, the `Store` methods, and purchase events in UdonSharp.
