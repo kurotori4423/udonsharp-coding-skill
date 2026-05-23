@@ -1,6 +1,6 @@
 ---
 name: udonsharp-coding
-description: A guide for coding with UdonSharp. Use this when you are asked to create or edit UdonSharp programs. Code that inherits from UdonSharpBehavior falls under UdonSharp code.
+description: A guide for coding with UdonSharp. Use this when you are asked to create or edit UdonSharp programs. Code that inherits from UdonSharpBehaviour falls under UdonSharp code.
 ---
 
 UdonSharp generally follows C# syntax, but its features are limited.
@@ -17,7 +17,7 @@ UdonSharp generally follows C# syntax, but its features are limited.
 - User defined methods with parameters and return values, supports out/ref, extension methods, and `params`
 - User defined properties
 - Static user methods
-- UdonSharpBehaviour inheritence, virtual methods, etc
+- UdonSharpBehaviour inheritance, virtual methods, etc
 - Unity/Udon event callbacks with arguments. For instance, registering an `OnPlayerJoined` event with a `VRCPlayerApi` argument is valid.
 - String interpolation
 - Field initializers
@@ -28,7 +28,7 @@ UdonSharp generally follows C# syntax, but its features are limited.
 # Differences from Unity C#
 
 - Udon currently only supports array `[]` collections and by extension UdonSharp only supports arrays at the moment.
-- Field initilizers are evaluated at compile time, if you have any init logic that depends on other objects in the scene you should use Start for this.
+- Field initializers are evaluated at compile time, if you have any init logic that depends on other objects in the scene you should use Start for this.
 - Use the UdonSynced attribute on fields that you want to sync.
 - Numeric casts are checked for overflow due to UdonVM limitations
 - The internal type of variables returned by `.GetType()` will not always match what you may expect since U# abstracts some types in order to make them work in Udon. For instance, any jagged array type will return a type of `object[]` instead of something like `int[][]` for a 2D int jagged array.
@@ -76,6 +76,10 @@ If you need to save player-specific data (like high scores, inventory, or settin
 # Loading (External Resources)
 
 If you need to retrieve text/JSON data or images from external servers at runtime, see `references/en/udon_stringLoading.md` and `references/en/udon_imageLoading.md`. These documents explain how to use `VRCStringDownloader` and `VRCImageDownloader` with their respective callbacks and limitations.
+
+# uGUI
+
+If you need to implement player-interactable UI with Unity uGUI components such as Canvas, Button, Slider, Toggle, ScrollRect, or InputField/TMP_InputField, read `references/en/udon_uGUI.md`. This document explains how uGUI events must target the UdonBehaviour component and call `UdonBehaviour.SendCustomEvent` instead of directly assigning UdonSharp callbacks, how to read UI values from Inspector references, and which VRChat-specific Canvas and navigation settings are required.
 
 # Creator Economy
 
