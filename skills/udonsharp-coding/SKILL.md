@@ -43,6 +43,10 @@ You cannot create a new GameObject using `new GameObject()` and similar APIs. In
 
 `bool IsValid(object obj)` returns true when `obj` is not null (or is otherwise valid). In UdonSharp, this is faster than doing null checks with `==`.
 
+# Editor Build-Time Scene Generation
+
+If you need to generate GameObjects or `UdonBehaviour` components during scene build processing, read `references/build_time_scene_generation.md`. For a Japanese human-readable explanation of the same guidance, read `references/build_time_scene_generation.ja.md`.
+
 # Basic Template
 
 ```cs
